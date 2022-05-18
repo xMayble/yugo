@@ -1,6 +1,8 @@
 import { Navbar, Welcome, Footer, Services, Transactions } from './elements';
 import './App.css'
 import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+
 
 
 const App = () => {
@@ -15,15 +17,22 @@ const App = () => {
     setLoginUser(user)
   }
   return (
-    <div className="min-h-screen">
-      <div className="gradient-bg-welcome">
-        <Navbar />
-        <Welcome />
-      </div>
-        <Services />
-        <Transactions />
-        <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element = {(
+            <div className="min-h-screen">
+            <div className="gradient-bg-welcome">
+              <Navbar />
+              <Welcome />
+            </div>
+              <Services />
+              <Transactions />
+              <Footer />
+          </div>
+          )} />
+        
+      </Routes>
+    </Router>
   );
 }
     
