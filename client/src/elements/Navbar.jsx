@@ -22,7 +22,7 @@ const [toggleMenu, setToggleMenu] = useState(false);
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
                 <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
-                    <a href="http://127.0.0.1:5500/yugo/client/src/elements/market.html">Market</a>
+                    <a href="http://127.0.0.1:5500/client/src/elements/market.html">Market</a>
                 </li>
             </ul>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
