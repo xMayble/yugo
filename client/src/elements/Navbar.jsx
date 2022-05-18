@@ -21,11 +21,18 @@ const [toggleMenu, setToggleMenu] = useState(false);
                 <img src={logo} alt='logo' className='w-32 cursor-pointer'/>
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-                {["Market", "Exchange", "Wallets"].map((item, index) => (
-                    <NavbarItem key={item + index} title={item} />
-                ))}
                 <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
-                    Sign up
+                    <a href="market.html">Market</a>
+                </li>
+            </ul>
+            <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
+                <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
+                    <a href="https://app.uniswap.org/#/swap?chain=mainnet">Exchange</a>
+                </li>
+            </ul>
+            <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
+                <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
+                    <a href=''>Claim</a>
                 </li>
                 <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
                     Market
