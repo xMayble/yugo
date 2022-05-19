@@ -1,12 +1,14 @@
-import { Navbar, Welcome, Footer, Services, Transactions } from './elements';
+import { Navbar, Welcome, Footer, Services, Transactions, Signup, Signin, Account } from './elements';
 import './App.css'
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 
-
 const App = () => {
-  const [ user, setLoginUser] = useState({})
+  const [user, setLoginUser] = useState({})
+  
+
+  
 
   useEffect(() => {
     setLoginUser(JSON.parse(localStorage.getItem("MyUser")))
@@ -30,7 +32,9 @@ const App = () => {
               <Footer />
           </div>
           )} />
-        
+        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/signin' element={<Signin/>}/>
+        <Route path='/account' element={<Account/>}/>
       </Routes>
     </Router>
   );
