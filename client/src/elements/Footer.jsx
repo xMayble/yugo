@@ -6,7 +6,9 @@ const Footer = () => {
                 <h3 className="text-white text-sm text-center"> Contact us at yugomarketplace@gmail.com! </h3>
             </div>
         </div>
+      
     );
+    
 }
 
 export default Footer;

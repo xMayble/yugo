@@ -32,8 +32,10 @@ body {
 }
 
 .headding1 p {
-    color: rgb(216, 182, 255);
-    font-family: cursive;
+    color: White;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 3.5vw;
     position: absolute;
     width: 50%;
@@ -43,11 +45,11 @@ body {
 }
 
 .headding2 {
+    color: rgb(145, 140, 140);
     font-size: 1.5vw;
-    font-weight: bold;
     position: absolute;
     width: 50%;
-    left: 30%;
+    left: 33%;
     bottom: 0;
     animation: moveheadding2 15s infinite;
 }
