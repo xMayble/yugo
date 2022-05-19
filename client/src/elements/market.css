@@ -192,18 +192,20 @@ background-color:  rgb(255,182,193);
     margin: 10% auto auto 10%;
 }
 
-.lotions-gift-sub h5 {
+.lotions-gift-sub h2 {
     text-align: center;
-    color: deeppink;
+    color: orange;
 }
 
 .lotions-gift-sub h4 {
     text-align: center;
+    color: white;
 }
 
 .lotions-gift-sub p {
     text-align: center;
     font-size: 1.8vw;
+    color: white;
 }
 
 .lotions-gift-sub figcaption {
@@ -211,6 +213,7 @@ background-color:  rgb(255,182,193);
     font-size: 1.2vw;
     padding-left: 12%;
     padding-right: 12%;
+    color: white;
 }
 
 .lotions-gift-sub a {
@@ -323,25 +326,13 @@ background-color:  rgb(255,182,193);
 
 /* Footer */
 
-.container-footer {
-    background-color: lightpink;
-    width: 96%;
-    margin: 7% auto 2% 2%;
-}
+
 
 .container-footer hr {
     height: 3px;
     background-color: white;
     border: none;
     margin: 2% 5% auto 5%;
-}
-
-.sub-footer {
-    width: 100%;
-    height: 30%;
-    display: inline-flex;
-    padding-top: 2%;
-    padding-bottom: 2%;
 }
 
 .footer {
@@ -353,19 +344,6 @@ background-color:  rgb(255,182,193);
     margin: auto auto auto 5%;
 }
 
-.social-media {
-    color: white;
-    font-size: 1.1vw;
-    margin: 3% auto auto 64%;
-    width: 34%;
-    font-family: sans-serif;
-}
-
-.social-media img {
-    display: flexbox;
-    width: 12%;
-    margin-left: 5%;
-}
 
 .footer-rights {
     color: white;
