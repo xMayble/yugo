@@ -21,20 +21,26 @@ const [toggleMenu, setToggleMenu] = useState(false);
                 <img src={logo} alt='logo' className='w-32 cursor-pointer'/>
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-                <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
+                <li className='bg-[#5D3FD3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
                     <a href="http://127.0.0.1:5500/client/src/elements/market.html">Market</a>
                 </li>
             </ul>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-                <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
+                <li className='bg-[#5D3FD3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
                     <a href="https://app.uniswap.org/#/swap?chain=mainnet">Exchange</a>
                 </li>
             </ul>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
-                <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
+                <li className='bg-[#5D3FD3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
                     <a href=''>Claim</a>
                 </li>
                
+            </ul>
+
+            <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
+                <li className='bg-[#5D3FD3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
+                    <a href="https://drive.google.com/file/d/184ia8_QeakkkcgDVc5AlO4LEe9d5oFne/view?usp=sharing">LitePaper</a>
+                </li>
             </ul>
             <div className='flex relative'>
                 {toggleMenu
