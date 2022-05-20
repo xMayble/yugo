@@ -2,24 +2,15 @@ import { Navbar, Welcome, Footer, Services, Transactions, Signup, Signin, Accoun
 import './App.css'
 import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { AuthContextProvider } from './context/AuthContext';
+
 
 
 const App = () => {
-  const [user, setLoginUser] = useState({})
   
-
-  
-
-  useEffect(() => {
-    setLoginUser(JSON.parse(localStorage.getItem("MyUser")))
-  }, [])
-
-  const updateUser = (user) => {
-    localStorage.setItem("MyUser", JSON.stringify(user))
-    setLoginUser(user)
-  }
   return (
     <Router>
+      <AuthContextProvider>
       <Routes>
         <Route path='/' element = {(
             <div className="min-h-screen">
@@ -32,10 +23,12 @@ const App = () => {
               <Footer />
           </div>
           )} />
+        
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/signin' element={<Signin/>}/>
         <Route path='/account' element={<Account/>}/>
       </Routes>
+      </AuthContextProvider>
     </Router>
   );
 }
