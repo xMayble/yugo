@@ -7,4 +7,3 @@ export { default as Welcome } from './Welcome';
 export {default as Signup} from './Signup';
 export {default as Signin} from './Signin';
 export {default as Account} from './Account'
-export {default as Fireba} from './firebase'
