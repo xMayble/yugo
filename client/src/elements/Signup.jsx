@@ -46,8 +46,8 @@ const Signup = () => {
             type='email'
           />
         </div>
-        <div className='flex flex-col py-2 text-white'>
-          <label className='py-2 font-medium ' >Password(Must be at least 6 characters)</label>
+        <div className='flex flex-col py-2 '>
+          <label className='py-2 font-medium text-white' >Password(Must be at least 6 characters)</label>
           <input
             onChange={(e) => setPassword(e.target.value)}
             className='border p-3'
