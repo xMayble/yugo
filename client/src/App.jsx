@@ -1,6 +1,6 @@
 import { Navbar, Welcome, Footer, Services, Transactions, Signup, Signin, Account } from './elements';
 import './App.css'
-import { useEffect, useState } from 'react';
+
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import { AuthContextProvider } from './context/AuthContext';
 
