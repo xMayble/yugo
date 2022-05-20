@@ -34,13 +34,13 @@ const Signin = () => {
           </Link>
         </p>
       </div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className = 'loginContainer'>
         <div className='flex flex-col py-2'>
           <label className='py-2 font-medium'>Email Address</label>
           <input onChange={(e) => setEmail(e.target.value)} className='border p-3' type='email' />
         </div>
         <div className='flex flex-col py-2'>
-          <label className='py-2 font-medium'>Password</label>
+          <label className='py-2 font-medium'>Password(Must be at least 6 characters)</label>
           <input onChange={(e) => setPassword(e.target.value)} className='border p-3' type='password' />
         </div>
         <button className='border border-purple-500 bg-purple-600 hover:bg-violet-500 w-full p-4 my-2 text-white'>
