@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
 
 const Account = () => {
@@ -19,7 +19,9 @@ const Account = () => {
   return (
     <section className='hero'>
       <nav>
+      <button ><Link to='/'>Home</Link></button>
       <h1 className='text-2xl font-bold py-4 text-white'>Account</h1>
+      
       <p className='text-white'>User Email: {user && user.email}</p>
 
       <button onClick={handleLogout} >
