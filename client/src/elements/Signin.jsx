@@ -23,11 +23,13 @@ const Signin = () => {
   };
 
   return (
+    <section className='hero'>
+    <button className='myButton' ><Link to='/'>Home</Link></button>
     <nav className='w-full flex md:justify-center justify-between items-center p-4'>
     <div className='max-w-[700px] mx-auto my-16 p-4'>
       <div>
-        <h1 className='text-2xl font-bold py-2'>Sign in to your account</h1>
-        <p className='py-2'>
+        <h1 className='text-2xl font-bold py-2 text-white'>Sign in to your account</h1>
+        <p className='py-2 text-white'>
           Don't have an account yet?{' '}
           <Link to='/signup' className='underline'>
             Sign up.
@@ -49,6 +51,7 @@ const Signin = () => {
       </form>
     </div>
     </nav>
+    </section>
   );
 };
 
