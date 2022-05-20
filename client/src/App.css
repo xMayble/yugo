@@ -82,9 +82,9 @@ button {
 .myButton {
   
   
-    position: fixed;
-    bottom: -4px;
-    right: 10px;
+  width: 86px;
+  padding: 8px 0;
+  background: #3a2b58;
   
 
 }
