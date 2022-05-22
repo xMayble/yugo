@@ -3,7 +3,7 @@ import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import {addTokenFunction} from './claim.js'
 
-import logo from '../../images/logo.png';
+import logo from '../../images/yugo.png';
 import { Link } from 'react-router-dom';
 
 const NavbarItem = ({ title, classProps }) => {
@@ -49,7 +49,7 @@ const [toggleMenu, setToggleMenu] = useState(false);
             </ul>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
                 <li className='bg-[#5D3FD3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
-                    <Link to='/signup'>Sign Up</Link>
+                    <Link to='/account'>Account</Link>
                 </li>
             </ul>
             <div className='flex relative'>
