@@ -46,7 +46,7 @@ const [toggleMenu, setToggleMenu] = useState(false);
             </ul>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>
                 <li className='bg-[#5D3FD3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
-                    <Link to='/signup'>Sign Up</Link>
+                    <Link to='/account'>Account</Link>
                 </li>
             </ul>
             <div className='flex relative'>

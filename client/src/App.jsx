@@ -3,6 +3,7 @@ import './App.css'
 
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import { AuthContextProvider } from './context/AuthContext';
+import ProtectedRoute from './elements/ProtectedRoute';
 
 
 
@@ -26,7 +27,11 @@ const App = () => {
         
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/signin' element={<Signin/>}/>
-        <Route path='/account' element={<Account/>}/>
+        <Route path='/account' element={
+              <ProtectedRoute>
+                <Account />
+              </ProtectedRoute>
+            }/>
       </Routes>
       </AuthContextProvider>
     </Router>
