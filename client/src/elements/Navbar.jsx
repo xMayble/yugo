@@ -3,7 +3,7 @@ import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 import {addTokenFunction} from './claim.js'
 
-import logo from '../../images/logo.png';
+import logo from '../../images/yugo.png';
 import { Link } from 'react-router-dom';
 
 const NavbarItem = ({ title, classProps }) => {

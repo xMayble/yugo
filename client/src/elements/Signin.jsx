@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { UserAuth } from '../context/AuthContext';
-
+import yugo from '../../images/yugo.png';
 
 
 const Signin = () => {
@@ -28,6 +28,7 @@ const Signin = () => {
     <button className='myButton' ><Link to='/'>Home</Link></button>
     <nav className='w-full flex md:justify-center justify-between items-center p-4'>
     <div className='max-w-[700px] mx-auto my-16 p-4'>
+    <img src={yugo} alt='logo' className='w-32 cursor-pointer '/>
       <div>
         <h1 className='text-2xl font-bold py-2 text-white'>Sign in to your account</h1>
         <p className='py-2 text-white'>
