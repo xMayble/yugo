@@ -117,3 +117,24 @@ button {
   padding: 8px 0;
   background: #3a2b58;
 }
+.avatar {
+  vertical-align: middle;
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: rgba(21, 11, 117, 0.801);
+  border-style: outset;
+  
+}
+.ibutton {
+
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 200%;
+  border-width: 0px;
+  border-color: gray;
+  border-style: outset;
+  cursor: pointer;
+}
